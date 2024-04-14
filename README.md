@@ -13,6 +13,12 @@ It is currently unfinished but you can go ahead and download it anyway if you re
 To install, download DDSD.zip from Releases. Extract it, then copy all the files from the DDSD-4.2.3-Py2-Renpy7Mod folder into your DDLC folder. Make sure to click "Yes" when a window pops up asking you to replace files with the same name. To run the game, make sure to run DDSD.exe.
 If you don't have DDLC, get the game from [here](https://ddlc.moe).
 
+## About Mod
+
+Like I said above, this mod is basically just a shitpost. However, I did put some effort into this mod. Your choices do matter and will influence what choices you are able to make in the future. Well, At least that's what I'm planning on having your choices do.
+
+This mod is about the MC having to wash his hands and getting into shenanigans due to a soap dispenser. I haven't really figured out what I want to happen yet so I can't write a detailed description for this mod yet.
+
 ## Credits
 
 This mod was made with bronya_rand's template. Copyright © 2019-2023 Azariel Del Carmen (bronya_rand). All rights reserved.

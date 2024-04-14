@@ -300,6 +300,7 @@ label timidMC:
         "Well, I knew this would come eventually. Honestly though, I might be better off just showing nothing instead of showing whatever this shit is."
         "But I spent the time making it, so I might as well use it. I know it was only like fifteen seconds but still."
         mc "Let's just get this shit over with..."
+        scene bg courtyard
         show monika base rhip happ uniform ma lpoint at thide
         show natsuki cross b1c ma at thide
         show yuri base b1c e1d rdown ma ldown at thide
@@ -308,15 +309,8 @@ label timidMC:
         hide sayori
         hide monika
         hide yuri
-        scene black
-        with wipeleft
-        scene bg courtyard
-        with wipeleft
-        show natsuki base laughing ma lhip zorder 4 at t41
-        show monika base eb rhip anno uniform mj zorder 3 at t42
-        show sayori base b1c e4c rup lsur ml lup zorder 2 at t43
-        show yuri base b1c ce rup ma ldown zorder 1 at t44
-        "My "
+        with wipeleft_scene
+        call poemresponseDDSD
     else:
         "Well, I knew this would come eventually. But knowing myself, showing nothing would probably be better than giving them whatever half-assed poem I would have came up with."
     return
