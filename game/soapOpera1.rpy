@@ -16,7 +16,7 @@ label soapOpera1:
     scene bg corridor
     with wipeleft
     "Hm."
-    "Well shit. I forgot to write a poem for today. Oh well, that's a problem for future me. Which will probably be me in five mintues."
+    "Well shit. I forgot to write a poem for today. Oh well, that's a problem for future me. Which will probably be me in five minutes."
     scene bg club_day
     with wipeleft
     "I look around. It seems that I'm the first one here, which isn't really a common occurrence."
@@ -75,7 +75,7 @@ label soapOpera1:
     show natsuki cross anno mj zorder 2 at thide
     hide natsuki
     show sayori base fine cm zorder 1 at t11
-    extend " persumably to get whatever she forgot here."
+    extend " presumably to get whatever she forgot here."
     mc "So I guess it's time for us to head to the courtyard now?"
     s base happ mb "Yeah, we should go."
     # idk why i installed extra poses but i sure as hell am going to use them now.
@@ -312,5 +312,6 @@ label timidMC:
         with wipeleft_scene
         call poemresponseDDSD
     else:
-        "Well, I knew this would come eventually. But knowing myself, showing nothing would probably be better than giving them whatever half-assed poem I would have came up with."
+        "Well, I knew this would come eventually. But knowing myself, I'm glad I didn't try to come up with anything last minute."
+        "I'm better off showing up with nothing than giving them whatever half-assed poem I would have came up with."
     return

@@ -45,9 +45,11 @@ label poemresponseDDSD:
 
             "Yuri" if not y_readpoem:
                 $ y_readpoem = True
+                call yuriResponse
 
             "Monika" if not m_readpoem:
                 $ m_readpoem = True
+                call monikaResponse
 
         # This variable increases the poems read by 1.
         $ poemsread += 1
@@ -70,7 +72,7 @@ label sayoriResponse:
     show sayori base rup happ mj lup zorder 1 at f11
     with wipeleft_scene
     mc "[poemDialog[poemsread]]"
-    pause 1.5
+    pause 1.7
     s base rdown anno lup "..."
     s base rdown anno mi lup "[player]... Did you even try today?"
     show sayori base rdown anno mj lup
@@ -94,7 +96,7 @@ label natsukiResponse:
     show natsuki cross happ zorder 1 at f11
     with wipeleft_scene
     mc "[poemDialog[poemsread]]"
-    pause 1.7
+    pause 1.5
     n "..."
     mc "Are you not going to say anything?"
     n cross happ mc "I mean, what is there to say? It's just as bad as the poems you usually make!"
@@ -109,7 +111,52 @@ label natsukiResponse:
     n "But I won't put it against you. I've forgotten to make poems a few times myself so I know what it feels like."
     show natsuki base b2a rhip laug ma
     mc "Thanks."
-    extend ""
     if (poemsread < 3):
         "Well, time to show someone else."
+    return
+
+label yuriResponse:
+    scene bg courtyard
+    show yuri base e4b rup happ lup zorder 1 at f11
+    with wipeleft_scene
+    mc "[poemDialog[poemsread]]"
+    pause 1.2
+    y base rup curi mj ldown "..."
+    y base e1b rup curi mk ldown "Um... I reckon this is just something you{nw}"
+    show yuri base e1a rup curi mk
+    extend " threw together in a few seconds?"
+    show yuri base e1a rup curi mj
+    mc "Yep. I forgot to make a poem last night. So I just made this garbage so I would at least have something to show."
+    y base b1c e1a rdown fine mb "Well, I'm glad you decided to try and make something even though you probably would've saved a bit of time if you didn't."
+    show yuri base b1c e1a rdown fine ma
+    mc "I mean, I didn't exactly try..."
+    y base b1a e1a rup fine mb lup "I'd still say it technically counts as your poem for the day.{nw}"
+    show yuri base b1a e1b rup fine mb lup
+    extend " Even though it isn't of the best quality,{nw}"
+    show yuri base b1a e1a rup fine mb lup
+    extend " a haiku is still a poem like any other."
+    mc "I... guess that's true. Thanks."
+    y shy e1 happ awkw "N-No problem."
+    if (poemsread < 3):
+        "Well, I guess it's time to show someone else."
+    return
+
+label monikaResponse:
+    scene bg courtyard
+    show monika base rhip happ uniform zorder 1 at f11
+    with wipeleft_scene
+    "Time to show Monika. I hope she's done being a bitch."
+    mc "[poemDialog[poemsread]]"
+    pause 1.3
+    m base e1b rhip happ uniform "Hm..."
+    m base e1a rhip happ uniform mb "I'm guessing you forgot to make a poem and just threw this together last minute?"
+    show monika base e1a rhip happ uniform ma
+    mc "Yep."
+    m lean happ m3 "That's okay. It's not like it happens every single day, so I don't really mind."
+    m lean happ e4 m3 "Just do your best not to forget again in the future."
+    show monika lean happ e4 m1
+    mc "Alright. I'll try, but no promises."
+    "That went surprisingly well."
+    if (poemsread < 3):
+        "Anyway, time to show someone else."
     return
