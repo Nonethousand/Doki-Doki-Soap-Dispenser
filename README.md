@@ -4,9 +4,9 @@
   <img src="./game/mod_assets/logo1.png" width=250px/>
 </p>
 
-This is just a random shitpost mod I decided to make.
-This repo only exists to store my progress on the mod lmao
-It is currently unfinished but you can go ahead and download it anyway if you really want to.
+This is just a random shitpost mod I decided to make.  
+This repo only exists to store my progress on the mod lmao  
+It is currently unfinished but you can go ahead and download it anyway if you really want to.  
 
 ## About Mod
 
