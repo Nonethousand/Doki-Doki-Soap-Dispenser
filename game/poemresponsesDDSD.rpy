@@ -37,19 +37,19 @@ label poemresponseDDSD:
 
             "Sayori" if not s_readpoem:
                 $ s_readpoem = True
-                call sayoriResponse
+                call sayoriResponse from _call_sayoriResponse
 
             "Natsuki" if not n_readpoem:
                 $ n_readpoem = True
-                call natsukiResponse
+                call natsukiResponse from _call_natsukiResponse
 
             "Yuri" if not y_readpoem:
                 $ y_readpoem = True
-                call yuriResponse
+                call yuriResponse from _call_yuriResponse
 
             "Monika" if not m_readpoem:
                 $ m_readpoem = True
-                call monikaResponse
+                call monikaResponse from _call_monikaResponse
 
         # This variable increases the poems read by 1.
         $ poemsread += 1

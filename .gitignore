@@ -6,3 +6,4 @@ traceback.txt
 **/images.rpa
 .vscode/
 Original Game Scripts/
+*.rpy.bak

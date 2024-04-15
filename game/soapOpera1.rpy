@@ -310,7 +310,7 @@ label timidMC:
         hide monika
         hide yuri
         with wipeleft_scene
-        call poemresponseDDSD
+        call poemresponseDDSD from _call_poemresponseDDSD
     else:
         "Well, I knew this would come eventually. But knowing myself, I'm glad I didn't try to come up with anything last minute."
         "I'm better off showing up with nothing than giving them whatever half-assed poem I would have came up with."
