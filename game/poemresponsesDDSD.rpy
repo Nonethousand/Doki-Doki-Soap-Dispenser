@@ -65,6 +65,8 @@ label poemresponseDDSD:
     $ y_readpoem = False
     $ m_readpoem = False
     $ poemsread = 0
+    scene bg courtyard
+    with wipeleft_scene
     return
 
 label sayoriResponse:
@@ -121,7 +123,7 @@ label yuriResponse:
     with wipeleft_scene
     mc "[poemDialog[poemsread]]"
     pause 1.2
-    y base rup curi mj ldown "..."
+    y base e1a rup curi mj ldown "..."
     y base e1b rup curi mk ldown "Um... I reckon this is just something you{nw}"
     show yuri base e1a rup curi mk
     extend " threw together in a few seconds?"
