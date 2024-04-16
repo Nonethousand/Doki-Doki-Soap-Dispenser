@@ -286,6 +286,8 @@ label timidMC:
     stop music fadeout 3.5
     play music t5
 
+    "Whatever. I should probably drop it instead of escalating this situation even further."
+    "So I decide to stay silent."
     show monika base rdown happ uniform cm lpoint zorder 2 at t43
     show natsuki cross b1c mc zorder 4 at f41
     n "Well, if you say it's fine then I won't question it."
@@ -294,24 +296,40 @@ label timidMC:
     show sayori base rdown happ ma
     show yuri base b1c e1d rdown ma ldown
     m "Well now that we're all here, now would be a good time to start out club activities for the day by sharing our poems!"
-
     show monika base rhip happ uniform ma lpoint
+
     if (madePoem):
         "Well, I knew this would come eventually. Honestly though, I might be better off just showing nothing instead of showing whatever this shit is."
         "But I spent the time making it, so I might as well use it. I know it was only like fifteen seconds but still."
         mc "Let's just get this shit over with..."
         scene bg courtyard
-        show monika base rhip happ uniform ma lpoint at thide
-        show natsuki cross b1c ma at thide
-        show yuri base b1c e1d rdown ma ldown at thide
-        show sayori base rdown happ ma at thide
-        hide natsuki
-        hide sayori
-        hide monika
-        hide yuri
         with wipeleft_scene
         call poemresponseDDSD from _call_poemresponseDDSD
+        "Well, I've showed everyone this shit now. I don't really need this anymore."
+        "I rip the paper in half, then crumple it up and throw it as far as I can in a random direction."
+        $ madePoem = False
     else:
         "Well, I knew this would come eventually. But knowing myself, I'm glad I didn't try to come up with anything last minute."
         "I'm better off showing up with nothing than giving them whatever half-assed poem I would have came up with."
+        mc "Yeah, uh, about that..."
+        show monika base rhip curi uniform me ldown
+        show natsuki cross b1f cm
+        show sayori base b1a e1a rdown ma lup
+        show yuri base b1c ea me
+        mc "I forgot to make a poem last night, so..."
+        m base b1b rhip uniform mb "Oh, did you?"
+        m base b1a e4b rdown uniform mb lpoint "That's okay. It's not like it happens every single day, so I don't really mind."
+        show natsuki cross b1c ma
+        show sayori base b1a e4b rup ma lup
+        show yuri base b1c eb cm
+        m base b1a ea rdown uniform mb ldown "Just... do your best and make sure not to forget in the future, or else I'll really have a problem!"
+        show monika base b1a ea rdown uniform ma ldown
+        mc "Uh, okay. I guess I'll try, but I won't make any promises."
+        "Well, that went surprisingly well."
+
+    scene bg courtyard
+    with wipeleft_scene
+    "We finish our club activities for the day and say our goodbyes to each other."
+    "I start running straight home, as I really need to finish this damn visual novel I have on my PC for some reason."
+    "The story is quite engaging so far. It's about the MC stuck in an endless time loop. Each iteration he slowly realizes that he's stuck in an unending cycle and eventually-{nw}"
     return
