@@ -243,6 +243,8 @@ image bg glitch = LiveTile("bg/glitch.jpg")
 
 image bg courtyard = "mod_assets/another_school_building_day.jpg"
 image bg stairs = "mod_assets/staireater.png"
+image bg corridor2 = "mod_assets/corridorflipped.png"
+image bg bathroom = "mod_assets/toilet_03.jpg"
 
 # This image transform shows a glitched scene effect
 # during Act 3 when we delete Monika.
@@ -1431,6 +1433,13 @@ image monika g2:
             pause 0.2
     repeat
 
+# SAMUEL SKELETON NO WAY
+image samuel neutral = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/stand.png")
+image samuel confused = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/nahbro.png")
+image samuel angry = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/fuckyou.png")
+image samuel dead = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/dead.png")
+image samuel ayo = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/ayowhat.png")
+
 ## Character Variables
 # This is where the characters are declared in the mod.
 # To define a new character with assets, declare a character variable like in this example:
@@ -1445,6 +1454,8 @@ define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suff
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+
+define ss = DynamicCharacter('ss_name', image='samuel', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 # This variable determines whether to allow the player to dismiss pauses.
 # By default this is set by config.developer which is normally set to false
@@ -1519,6 +1530,8 @@ default s_name = "Sayori"
 default m_name = "Monika"
 default n_name = "Natsuki"
 default y_name = "Yuri"
+
+default ss_name = "Samuel B. Skeleton"
 
 # Poem Variables
 # This section records how much each character likes your poem in-game.

@@ -77,17 +77,15 @@ label soapOpera1:
     show sayori base fine cm zorder 1 at t11
     extend " presumably to get whatever she forgot here."
     mc "So I guess it's time for us to head to the courtyard now?"
-    s base happ mb "Yeah, we should go."
+    s base happ mb "Yeah, we should go. Natsuki will probably come down in a bit, so we can probably leave her here."
     # idk why i installed extra poses but i sure as hell am going to use them now.
-    show sayori base happ mb zorder 1 at thide
-    hide sayori
 
     stop music fadeout 3.0
 
-    scene bg corridor with wiperight
-    pause 0.7
+    scene bg corridor with wiperight_scene
+    pause 0.8
     scene bg stairs with wiperight
-    "As I go down the stairs I realize that we left Natsuki, but she'll probably come down in a bit."
+    pause 0.8
     scene bg courtyard with wiperight
 
     play music t6
@@ -150,8 +148,12 @@ label soapOpera1:
     stop music fadeout 3.0
     play music t3
 
+    scene bg corridor2 with wipeleft
+    pause 0.7
+    scene bg bathroom with wipeleft
+
     return
-    
+
 label makePoem:
     "I glance around to make sure that no one snuck into the room while I was pondering what to do, then quickly grab a piece of lined paper and a pencil."
     "I'll just make a haiku, since those things can be made pretty easily and fast."
