@@ -151,7 +151,12 @@ label soapOpera1:
     scene bg corridor2 with wipeleft
     pause 0.7
     scene bg bathroom with wipeleft
-
+    "I quickly walk over to the sink to wash my hands. I put one of my hands under the soap dispenser and use the other hand to press the button."
+    "Except that I'm met with a smooth and cold wall rather than a soap dispenser button."
+    mc "Wait, what?!"
+    mc "Where's the dispenser?"
+    "I look around frantically trying to find the dispenser, but it is to no avail."
+    "Perhaps someone has stolen it? Maybe I should look around for clues..."
     return
 
 label makePoem:
@@ -170,6 +175,7 @@ label samuelSkeleton:
     mc "Yes, in fact I will. Such art shouldn't be kept in a place like this, with no one to observe it's glory."
     "I glance around to make sure that no one snuck into the room while I was admiring the skeleton, then snatch the pinkie finger from it's hand and stick it in my pocket for safekeeping."
     $ hasFinger = True
+    $ stoleFinger = True
     mc "I feel like that should have been attached more securely on there. That was way easier to pull off than I thought."
     return
 

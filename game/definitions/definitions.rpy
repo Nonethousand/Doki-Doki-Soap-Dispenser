@@ -1600,8 +1600,11 @@ default natsuki_23 = None
 
 # MOD VARIABLES
 
-# This variable tracks whether we have aquirred the pinkie finger from the skeleton.
+# This variable tracks whether we have the pinkie finger from the skeleton or not.
 default hasFinger = False
+
+# This variable tracks if we stole the finger in the first place, no matter if we lost it or not.
+default stoleFinger = False
 
 # This variable tracks whether we decided to make the fifteen second haiku or not.
 default madePoem = False
