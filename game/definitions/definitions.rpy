@@ -1606,6 +1606,9 @@ default hasFinger = False
 # This variable tracks if we stole the finger in the first place, no matter if we lost it or not.
 default stoleFinger = False
 
+# This variable tracks whether we admired the skeleton in the courtyard or not.
+default admiredSecond = False
+
 # This variable tracks whether we decided to make the fifteen second haiku or not.
 default madePoem = False
 

@@ -144,19 +144,7 @@ label soapOpera1:
     mc "{cps=200}{b}Oof!!!{/b}"
     "I tripped on... something, and fell on the ground. I've scraped my hands in the process."
     "They are bleeding a bit, so it looks like I have to go and clean them. I'm still on school grounds, so it would probably be fastest to just go in there and wash my hands."
-
-    stop music fadeout 3.0
-    play music t3
-
-    scene bg corridor2 with wipeleft
-    pause 0.7
-    scene bg bathroom with wipeleft
-    "I quickly walk over to the sink to wash my hands. I put one of my hands under the soap dispenser and use the other hand to press the button."
-    "Except that I'm met with a smooth and cold wall rather than a soap dispenser button."
-    mc "Wait, what?!"
-    mc "Where's the dispenser?"
-    "I look around frantically trying to find the dispenser, but it is to no avail."
-    "Perhaps someone has stolen it? Maybe I should look around for clues..."
+    call soapOpera2
     return
 
 label makePoem:
@@ -200,6 +188,7 @@ label dipper:
     return
 
 label daveBones:
+    $ admiredSecond = True
     mc "..."
     mc "Ah, the skeleton, An exquisite..."
     show sayori base e1a curious lup
