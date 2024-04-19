@@ -1439,6 +1439,7 @@ image samuel confused = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/
 image samuel angry = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/fuckyou.png")
 image samuel dead = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/dead.png")
 image samuel ayo = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/ayowhat.png")
+image samuel veryangry = im.Composite((960, 960), (0, 120), "mod_assets/skeleton/bazooka.png")
 
 ## Character Variables
 # This is where the characters are declared in the mod.
@@ -1617,3 +1618,7 @@ default dipping = False
 
 # MC poem dialogs.
 default poemDialog = ["Here you go.", "Don't have high expectations for today.", "Here's my poem. I know its bad so you don't need to say it.", "Here. Take it. Just get it over with."]
+
+# variables for cutscene
+$ movielength = 0
+$ movieplaying = "None"

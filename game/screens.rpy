@@ -2114,6 +2114,13 @@ screen choose_language():
                     style "confirm_button"
                     action [Language(chosen_lang), Return()]
 
+screen custommoviescreen: # https://www.reddit.com/r/RenPy/comments/oqwubr/how_do_you_make_it_so_that_the_user_cannot/
+    add Movie(size=(1280,720))
+    on "show" action Play("movie", movieplaying, loop=False)
+    on "hide" action Stop("movie")
+
+    timer 0.1 repeat True action If(movielength > 0.0, true=(SetVariable('movielength', movielength - 0.1)), false=(Return(0)))
+
 translate None strings:
     old "{#language name and font}"
     new "English"

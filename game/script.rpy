@@ -4,6 +4,8 @@
 # your mod's story! 
 
 label start:
+    python:
+        _preferences.show_empty_window = False
 
     # This label configures the anticheat number for the game after Act 1.
     # It is recommended to leave this as-is and use the following in your script:
@@ -42,13 +44,3 @@ label start:
     $ y_name = "Yuri"
 
     call soapOpera1 from _call_soapOpera1
-
-label endgame(pause_length=4.0):
-    $ quick_menu = False
-    stop music fadeout 2.0
-    scene black
-    show end
-    with dissolve_scene_full
-    pause pause_length
-    $ quick_menu = True
-    return
