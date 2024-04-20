@@ -280,6 +280,7 @@ label bullshitting:
     return
 
 label timidMC:
+    $ timidMC = True
     stop music fadeout 3.5
     play music t5
 

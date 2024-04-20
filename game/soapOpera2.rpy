@@ -14,6 +14,8 @@ label soapOpera2:
         "Perhaps someone has stolen it? Maybe I should look around for clues..."
         "Look for clues":
             return
+        "Try another bathroom":
+            return
         "Admire the model skeleton":
             call enterSamuel
     return
@@ -33,12 +35,15 @@ label enterSamuel:
             ss "{b}I'm [ss_name], and I have a bone to pick with you, [player]!!!{/b}"
             mc "What the hell is happening?!"
             ss confused "{b}Oh, I'll tell you what's happening. You've stolen my finger. And I need it back immediately."
-            mc "Oh... I, uh..."
+            mc "Why the hell is there a talking skeleton?! I must be seeing things again. Maybe I got a concussion when I fell or something."
+            ss "{b}That doesn't matter right now! What matters is you giving back my finger!"
+            mc "Well, uh..."
             if (hasFinger):
+                $ hasFinger = False
                 mc "Do you... really need it back? Are you sure I can't keep it?"
                 ss angry "{b}Why are you asking me that? Of course I want it back!{/b}"
                 mc "Whoa, chill. No need to point that at me. Here, just take it."
-                "I toss the pinkie finger to the skeleton. He catches it and tries to reattach the joint, but fails."
+                "I toss the pinkie finger to the skeleton. He catches it and tries to reattach the joint, but repeatedly fails."
                 ss ayo "{b}Now look what you've done! I can't even put it back on!{/b}"
                 mc "Just try harder?"
                 ss neutral "{b}Shut up! This never would have happened if you just never snatched my finger in the first place!{/b}"
@@ -54,16 +59,33 @@ label enterSamuel:
                 mc "Because?"
                 ss "{b}Yep.{/b}"
                 ss "{b}Now, since you've damaged my hand permanently you're going to have to do something for me to make it up.{/b}"
+                mc "Whatever. It's not like I have anything else to do anyway."
+                mc "So... what is it that you need help with?"
+                ss "{b}Okay, so you're probably wondering what I'm doing in this bathroom, right?{/b}"
+                mc "Not really."
+                ss angry "..."
+                mc "I mean, uh, yeah. I was definitely wondering that this entire time."
+                ss neutral "{b}Well, I came here to look for a certain object. A soap dispenser.{/b}"
+                "Wait, what? He needs the soap dispenser too? What kind of nefarious scheme is he plotting that needs a soap dispenser?"
+                ss "{b}However, when I came in here, I found nothing. How do you people even wash your hands in this school?{/b}"
+                mc "Oh. Well, there are usually soap dispensers in the bathrooms, but it seems that the one here is missing."
+                mc "What do you even need a soap dispenser for?"
+                ss "{b}It is the last key item I need to execute my plan of WORLD DOMINATION.{/b}"
+                mc "Excuse me? I... you know what, I'm not even going to ask you to elaborate."
+                ss confused "{b}So... you're going to help me right?{b}"
+                mc "I was looking for a soap dispenser anyway, so I might as well indulge in whatever the fuck this is for a bit."
+                ss neutral "{b}Great! I'm glad you didn't force me to use more harsh methods to get you to comply!"
             else:
-                mc "I don't have it anymore. It disappeared."
+                mc "I don't have it anymore. It disappeared. It was in my pocket but when I tried to take it out again it was gone."
                 ss neutral "{b}...{/b}"
-                ss angry "{b}YOU WHAT?!{/b}"
+                ss angry "{b}IT DISAPPEARED?!{/b}"
                 mc "Wait, wait, wait! I think you're overreacting a bit, dude. It's just a dumb little finger. No need to pull out a fucking gun."
                 ss "{b}Overreacting?! What if I took your finger and lost it, hm? I can guarantee you wouldn't be that happy about it.{b}"
                 mc "Honestly I couldn't care less."
                 ss "{b}...{/b}"
                 ss "{b}You don't deserved to be merely shot by a gun.{/b}"
-                ss veryangry "{cps=200}{b}YOU NEED TO BE BLASTED TO SMITHEREENS WITH THIS FUCKING ROCKET LAUNCHER!!!{b}"
+                show ss veryangry at hf11
+                ss "{cps=200}{b}YOU NEED TO BE BLASTED TO SMITHEREENS WITH THIS FUCKING ROCKET LAUNCHER!!!{b}"
                 mc "What the fuck?! Where did you even get that?!"
                 ss "{b}That doesn't matter! What matters is that I'm going to pull this trigger and there's nothing you can do about it!"
                 mc "Wait-{nw}"
@@ -72,4 +94,5 @@ label enterSamuel:
                 $ movielength = 13.3 # https://www.reddit.com/r/RenPy/comments/oqwubr/how_do_you_make_it_so_that_the_user_cannot/
                 $ movieplaying = "mod_assets/samuelMissileEnding.webm"
                 call screen custommoviescreen with dissolve
+                
     return

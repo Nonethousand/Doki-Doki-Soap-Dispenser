@@ -1620,5 +1620,8 @@ default dipping = False
 default poemDialog = ["Here you go.", "Don't have high expectations for today.", "Here's my poem. I know its bad so you don't need to say it.", "Here. Take it. Just get it over with."]
 
 # variables for cutscene
-$ movielength = 0
-$ movieplaying = "None"
+default movielength = 0
+default movieplaying = "None"
+
+# This variable tracks whether we chose to stay silent instead of calling Monika out.
+default timidMC = False
