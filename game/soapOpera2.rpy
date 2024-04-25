@@ -74,7 +74,19 @@ label enterSamuel:
                 mc "Excuse me? I... you know what, I'm not even going to ask you to elaborate."
                 ss confused "{b}So... you're going to help me right?{b}"
                 mc "I was looking for a soap dispenser anyway, so I might as well indulge in whatever the fuck this is for a bit."
-                ss neutral "{b}Great! I'm glad you didn't force me to use more harsh methods to get you to comply!"
+                ss neutral "{b}Great! I'm glad you didn't force me to use more harsh methods to get you to comply!{/b}"
+                mc "Whatever."
+                scene bg corridor2 with wiperight_scene
+                menu:
+                    "It seems this dumb ahh skeleton is going to stay in the bathroom and look around. I might as well look for clues as well. Or I can dip and get the hell out of this place."
+                    "Look on wall":
+                        return
+                    "Look in another bathroom":
+                        return
+                    "Look in clubroom":
+                        return
+                    "Exit the school and dip":
+                        return
             else:
                 mc "I don't have it anymore. It disappeared. It was in my pocket but when I tried to take it out again it was gone."
                 ss neutral "{b}...{/b}"
