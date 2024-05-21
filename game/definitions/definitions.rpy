@@ -245,6 +245,7 @@ image bg courtyard = "mod_assets/another_school_building_day.jpg"
 image bg stairs = "mod_assets/staireater.png"
 image bg corridor2 = "mod_assets/corridorflipped.png"
 image bg bathroom = "mod_assets/toilet_03.jpg"
+image bg corridor_forward = "mod_assets/memeboard.png"
 
 # This image transform shows a glitched scene effect
 # during Act 3 when we delete Monika.
