@@ -29,7 +29,7 @@ label enterSamuel:
         show samuel neutral zorder 1 at f11
         ss "{b}Who are you calling nonexistent? I'm just as real as you are!{/b}"
     else: # did not admire the second time
-        mc "Uh... you know, I can't really admire something in such a weird environment."
+        mc "Ah, the skeleton... Uh... I can't really admire this thing in such a weird environment."
         show samuel neutral zorder 1 at f11
         ss "{b}BOOOOOOOO!!!!!{/b}" # I can't think of a better intro for him so im going with this for now
     mc "..."
@@ -80,9 +80,7 @@ label enterSamuel:
             menu:
                 "It seems this dumb skeleton is going to stay in the bathroom and look around. I might as well look for clues as well. Or I can dip and get the hell out of this place."
                 "Look on wall":
-                    scene bg corridor_forward
-                    with wipeleft_scene
-                    pause 20.0
+                    call lookyonywally
                     return
                 "Look in another bathroom":
                     return
@@ -91,12 +89,14 @@ label enterSamuel:
                 "Exit the school and dip":
                     return
         else:
-            mc "I don't have it anymore. It disappeared. It was in my pocket but when I tried to take it out again it was gone."
+            "What am I supposed to do? I stole it but when I looked at him the second time it just randomly disappeared!"
+            "I guess I should come clean seeing how he's probably going to keep pestering me about it. What could possibly go wrong anyway?"
+            mc "I, um, don't have it anymore. It disappeared. It was in my pocket but when I tried to take it out again it was gone."
             ss neutral "{b}...{/b}"
             ss angry "{b}IT DISAPPEARED?!{/b}"
             mc "Wait, wait, wait! I think you're overreacting a bit, dude. It's just a dumb little finger. No need to pull out a fucking gun."
             ss "{b}Overreacting?! What if I took your finger and lost it, hm? I can guarantee you wouldn't be that happy about it.{b}"
-            mc "Honestly I couldn't care less."
+            mc "Honestly, I couldn't care less. I still have nine others."
             ss "{b}...{/b}"
             ss "{b}You don't deserve to be merely shot by a gun.{/b}"
             show ss veryangry at hf11
@@ -111,4 +111,13 @@ label enterSamuel:
             call screen custommoviescreen with dissolve
     else: # did not admire the first time
         return
+    return
+
+label lookyonywally:
+    scene bg corridor_forward
+    with wipeleft_scene
+    "..."
+    "Well, this is definitely a wall."
+    "Wait, what? \"Free soap dispensers in this direction, follow red arrow to find.\" Hm, seems like a trustworthy sign. Even Monika approved it, apparently."
+    "I might as well follow it. Don't have any other leads anyway."
     return
