@@ -107,7 +107,7 @@ label soapOpera1:
     m "Just... think of this as an opportunity to finally touch some grass."
     show monika base rhip anno uniform cm
     mc "..."
-    mc "What the hell are you even going on about right now?"
+    mc "Huh??? What are you... What the hell is that supposed to mean???"
     "This sudden rudeness from Monika is a bit strange. She usually treats me pretty nicely, so it makes me wonder if I accidentally did something to piss her off."
     show monika base rhip anno uniform cm zorder 2 at t32
     show yuri base b1f eyes_a om lup zorder 3 at f33
@@ -174,18 +174,17 @@ label dipper:
     scene bg corridor
     with wiperight
     mc "Oh shit, I forgot my phone."
-    "I quickly go back into the room to grab my phone."
+    "I quickly go back into the room to grab my phone, which takes like ten seconds to find."
     scene bg club_day
     with wipeleft
     pause 1.0
     scene bg corridor
     with wiperight
-    "I hope they're not too close to the clubroom. I've spent about twenty seconds gathering all of my belongings."
     "I start to walk away, but then I notice Sayori and Natsuki walking down the hallway. Well, I guess my plan to ditch the club has failed."
     "I decide to go back into the clubroom and just pretend I was standing in there the entire time just waiting."
     scene bg club_day
     with wipeleft
-    "I wait for them to enter the room."
+    "Then, I wait for them to enter the room."
     return
 
 label daveBones:
@@ -304,7 +303,7 @@ label timidMC:
         scene bg courtyard
         with wipeleft_scene
         call poemresponseDDSD from _call_poemresponseDDSD
-        "Well, I've showed everyone this shit now. I don't really need this anymore."
+        mc "Well, I've showed everyone this shit now. I don't really need this anymore."
         "I rip the paper in half, then crumple it up and throw it as far as I can in a random direction."
         $ madePoem = False
     else:

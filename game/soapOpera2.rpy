@@ -120,4 +120,5 @@ label lookyonywally:
     "Well, this is definitely a wall."
     "Wait, what? \"Free soap dispensers in this direction, follow red arrow to find.\" Hm, seems like a trustworthy sign. Even Monika approved it, apparently."
     "I might as well follow it. Don't have any other leads anyway."
+    
     return

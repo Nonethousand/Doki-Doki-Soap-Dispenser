@@ -114,7 +114,7 @@ label natsukiResponse:
     show natsuki base b2a rhip laug ma
     mc "Thanks."
     if (poemsread < 3):
-        "Well, time to show someone else."
+        "Let's see who I can show this to next.."
     return
 
 label yuriResponse:
