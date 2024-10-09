@@ -7,3 +7,4 @@ traceback.txt
 .vscode/
 Original Game Scripts/
 *.rpy.bak
+game/saves/
