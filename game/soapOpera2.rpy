@@ -87,6 +87,7 @@ label enterSamuel:
                 "Look in clubroom":
                     return
                 "Exit the school and dip":
+                    call bludstopdipping
                     return
         else:
             "What am I supposed to do? I stole it but when I looked at him the second time it just randomly disappeared!"
@@ -120,5 +121,37 @@ label lookyonywally:
     "Well, this is definitely a wall."
     "Wait, what? \"Free soap dispensers in this direction, follow red arrow to find.\" Hm, seems like a trustworthy sign. Even Monika approved it, apparently."
     "I might as well follow it. Don't have any other leads anyway."
-    
+    return
+
+label bludstopdipping:
+    "..."
+    "Man, what the hell is wrong with me?"
+    "I must be tired or something. Skeletons aren't even real!"
+    "Screw this, I'm leaving."
+    scene bg corridor2 with wiperight_scene
+    pause 0.7
+    scene bg corridor_forward with wiperight
+    # if submitted to monika and showed a poem instead of escalating the situation, you get to go home!!! if not you have to deal with four crazy ass bitches LMFAO good luck
+    if (timidMC):
+        pause 0.7
+        scene bg courtyard with wiperight
+        pause 0.7
+        scene bg residential_day with wiperight
+        pause 0.7
+        scene bg kitchen with wiperight
+        mc "Oh my god, I'm finally home. No more skeletons, and best of all, no more annoying bitches to deal with."
+        mc "I can finally finish playing the visual novel I was yapping about earlier as well. The one I was talking about before I fell."
+        mc "...Oh yeah. I fell"
+        "I look down at my hands. Still bleeding. I never got to wash my hands."
+        mc "Well, it's not like I can get infected from such a small injury. Right?"
+        mc "...Right?"
+        "I shake the thought out of my head, and go straight to my room to relax."
+        scene bg bedroom with wipeleft
+        mc "Time to get this shitty game over with..."
+        "I turn on my gaming console and boot up the visual novel."
+        scene bg bedroom_gameon
+        mc "...You know what, now that, I look at the title screen more closely, the four FMCs look very similar to me for some reason."
+        mc "Ah, I know. That one with the purple hair looks like Fern. Or maybe Raiden Shougun."
+        mc "The one in the front and the one with the red bow look like characters from some random anime I forgot the name of."
+        mc "But I don't know who the fuck that pink haired one is. Doesn't remind me of any character or person I know in real life."
     return

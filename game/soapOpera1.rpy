@@ -137,10 +137,10 @@ label soapOpera1:
         "Call Monika out":
             call bullshitting from _call_bullshitting
         "Stay silent":
-            call timidMC from _call_timidMC
+            call timid
         "Admire the model skeleton":
             call daveBones from _call_daveBones
-        "Leave":
+        "Exit the situation and dip":
             call dipTheSecond from _call_dipTheSecond
     mc "{cps=200}{b}Oof!!!{/b}"
     "I tripped on... something, and fell on the ground. I've scraped my hands in the process."
@@ -279,7 +279,7 @@ label bullshitting:
     "I am genuinely confused as to what-{nw}"
     return
 
-label timidMC:
+label timid:
     $ timidMC = True
     stop music fadeout 3.5
     play music t5
