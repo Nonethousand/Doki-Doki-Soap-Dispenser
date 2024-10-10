@@ -5,7 +5,6 @@ label soapOpera1:
     play music t2
     $ restore_all_characters()
 
-    pause 20.0
     mc "{i}Sigh...{/i}"
     "I can't help but feel like I have been doing nothing with my life."
     "It just feels like I'm stuck in an endless cycle of \"wake up, go to school, go home, and sleep.\""

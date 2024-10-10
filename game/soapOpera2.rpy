@@ -128,9 +128,9 @@ label bludstopdipping:
     "Man, what the hell is wrong with me?"
     "I must be tired or something. Skeletons aren't even real!"
     "Screw this, I'm leaving."
-    scene bg corridor2 with wiperight_scene
+    scene bg corridor_forward with wiperight_scene
     pause 0.7
-    scene bg corridor_forward with wiperight
+    scene bg stairs with wiperight
     # if submitted to monika and showed a poem instead of escalating the situation, you get to go home!!! if not you have to deal with four crazy ass bitches LMFAO good luck
     if (timidMC):
         pause 0.7
@@ -141,7 +141,7 @@ label bludstopdipping:
         scene bg kitchen with wiperight
         mc "Oh my god, I'm finally home. No more skeletons, and best of all, no more annoying bitches to deal with."
         mc "I can finally finish playing the visual novel I was yapping about earlier as well. The one I was talking about before I fell."
-        mc "...Oh yeah. I fell"
+        mc "...Oh yeah. I fell."
         "I look down at my hands. Still bleeding. I never got to wash my hands."
         mc "Well, it's not like I can get infected from such a small injury. Right?"
         mc "...Right?"
@@ -154,4 +154,16 @@ label bludstopdipping:
         mc "Ah, I know. That one with the purple hair looks like Fern. Or maybe Raiden Shougun."
         mc "The one in the front and the one with the red bow look like characters from some random anime I forgot the name of."
         mc "But I don't know who the fuck that pink haired one is. Doesn't remind me of any character or person I know in real life."
+        mc "Anyway, on with the game."
+        scene black with wipeleft
+        pause 0.7
+        scene bg bedroom_night with wipeleft
+        "After a few hours of playing, I finally finish the visual novel. Tears almost fall from my eyes but I manage to hold everything in."
+        mc "Goddamn. That was a rollercoaster. I didn't think the MC would've had to sacrifice himself in order to stop the time loop."
+        mc "And at the end, where all the other characters... actually, I can reminisce about this later. I need to go to sleep."
+        stop music fadeout 1.0
+        scene black with wipeleft
+        play sound sleep
+        pause 3
+        scene bg bedroom with wipeleft
     return
