@@ -151,7 +151,7 @@ label bludstopdipping:
         "I turn on my gaming console and boot up the visual novel."
         scene bg bedroom_gameon
         mc "...You know what, now that, I look at the title screen more closely, the four FMCs look very similar to me for some reason."
-        mc "Ah, I know. That one with the purple hair looks like Fern. Or maybe Raiden Shougun."
+        mc "Ah, I know. That one with the purple hair looks like Fern. Or maybe Raiden Shogun."
         mc "The one in the front and the one with the red bow look like characters from some random anime I forgot the name of."
         mc "But I don't know who the fuck that pink haired one is. Doesn't remind me of any character or person I know in real life."
         mc "Anyway, on with the game."
@@ -166,4 +166,5 @@ label bludstopdipping:
         play sound sleep
         pause 3
         scene bg bedroom with wipeleft
+        "I sit up on my bed once I awake, stretching my arms."
     return
