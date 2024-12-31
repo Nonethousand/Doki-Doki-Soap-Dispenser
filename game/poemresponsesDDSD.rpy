@@ -7,7 +7,7 @@ label poemresponseDDSD:
     
     # This label loops the poem music and applies the screen transition of
     # the poem responses.
-    label poemresponse_loop:
+    label oemresponse_loop:
         # This variable disables skipping poems.
         $ skip_poem = False
 
@@ -23,7 +23,7 @@ label poemresponseDDSD:
         if not renpy.music.get_playing():
             play music t5
 
-    label poemresponse_start2:
+    label oemresponse_start2:
         $ skip_poem = False
         
         if poemsread == 0:
@@ -57,7 +57,7 @@ label poemresponseDDSD:
         # This if/else statement checks if we have not yet read 3 poems for Act 2 
         # or if we are in Act 1 and haven't read 4 poems.
         if poemsread < 3 or (persistent.playthrough == 0 and poemsread < 4):
-            jump poemresponse_loop
+            jump oemresponse_loop
 
     # These variables resets the read poem variables back to normal.
     $ s_readpoem = False

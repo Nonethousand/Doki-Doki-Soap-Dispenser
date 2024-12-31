@@ -21,7 +21,6 @@ label soapOpera2:
     return
 
 label enterSamuel:
-    mc "..."
     if (admiredSecond): # admired the second time
         mc "No, I'm not doing this shit again."
         mc "There's no point in wasting time marveling over some nonexistent skeleton."
@@ -117,28 +116,25 @@ label enterSamuel:
 label lookyonywally:
     scene bg corridor_forward
     with wipeleft_scene
-    "..."
-    "Well, this is definitely a wall."
-    "Wait, what? \"Free soap dispensers in this direction, follow red arrow to find.\" Hm, seems like a trustworthy sign. Even Monika approved it, apparently."
-    "I might as well follow it. Don't have any other leads anyway."
+    mc "..."
+    mc "Well, this is definitely a wall."
+    mc "Wait, what? \"Free soap dispensers in this direction, follow red arrow to find.\" Hm, seems like a trustworthy sign. Even Monika approved it, apparently."
+    mc "I might as well follow it. Don't have any other leads anyway."
     return
 
 label bludstopdipping:
-    "..."
-    "Man, what the hell is wrong with me?"
-    "I must be tired or something. Skeletons aren't even real!"
-    "Screw this, I'm leaving."
-    scene bg corridor_forward with wiperight_scene
-    pause 0.7
+    mc "..."
+    mc "Man, what the hell is wrong with me?"
+    mc "I must be tired or something. Skeletons aren't even real!"
+    mc "Screw this, I'm leaving."
+    scene bg corridor_forward with wiperight
+    pause 0.3
     scene bg stairs with wiperight
     # if submitted to monika and showed a poem instead of escalating the situation, you get to go home!!! if not you have to deal with four crazy ass bitches LMFAO good luck
     if (timidMC):
-        pause 0.7
-        scene bg courtyard with wiperight
-        pause 0.7
-        scene bg residential_day with wiperight
-        pause 0.7
-        scene bg kitchen with wiperight
+        pause 0.3
+        scene bg kitchen with wiperight_scene
+        "I let out a heavy sigh as I enter my house."
         mc "Oh my god, I'm finally home. No more skeletons, and best of all, no more annoying bitches to deal with."
         mc "I can finally finish playing the visual novel I was yapping about earlier as well. The one I was talking about before I fell."
         mc "...Oh yeah. I fell."
@@ -152,7 +148,7 @@ label bludstopdipping:
         scene bg bedroom_gameon
         mc "...You know what, now that, I look at the title screen more closely, the four FMCs look very similar to me for some reason."
         mc "Ah, I know. That one with the purple hair looks like Fern. Or maybe Raiden Shogun."
-        mc "The one in the front and the one with the red bow look like characters from some random anime I forgot the name of."
+        mc "The one in the front and the one with the red bow look like characters from some random ass anime I forgot the name of."
         mc "But I don't know who the fuck that pink haired one is. Doesn't remind me of any character or person I know in real life."
         mc "Anyway, on with the game."
         scene black with wipeleft
@@ -166,5 +162,39 @@ label bludstopdipping:
         play sound sleep
         pause 3
         scene bg bedroom with wipeleft
-        "I sit up on my bed once I awake, stretching my arms."
+        "I sit up on my bed once I wake up, stretching my arms."
+        "I almost lay back down right away in order to spend half of the day just scrolling through my phone, but then I remember school exists."
+        "I proceed to go through my normal morning routine."
+        "I'm not going to describe it to you in detail so just assume I went into the bathroom to brush my teeth for approximately 2 minutes, went back into my bedroom to put on my school uniform, went"
+        $ _history_list.pop() # removing these history entries because it's gonna be a little wack since all of the repeating text.
+        "into the bathroom to brush my teeth for approximately 2 minutes, went back into my bedroom to put on my school uniform, went {fast}back into the bathroom to admire my face in the mirror, went back"
+        $ _history_list.pop()
+        "went back into my bedroom to put on my school uniform, went back into the bathroom to admire my face in the mirror, went back {fast}into my bedroom to sit on the bed in order to figure out what to do"
+        $ _history_list.pop()
+        "into the bathroom to admire my face in the mirror, went back into my bedroom to sit on the bed in order to figure out what to do {fast}for the next 30 minutes until I would leave to walk to school, laid"
+        $ _history_list.pop()
+        "my bedroom to sit on the bed in order to figure out what to do for the next 30 minutes until I would leave to walk to school, laid {fast}\non my bed to watch a few Youtube videos, got back up because I"
+        $ _history_list.pop()
+        "the next 30 minutes until I would leave to walk to school, laid on my bed to watch a few Youtube videos, got back up because I {fast}realized I forgot to eat breakfast, went to the kitchen to get and eat"
+        $ _history_list.pop()
+        "on my bed to watch a few Youtube videos, got back up because I realized I forgot to eat breakfast, went to the kitchen to get and eat {fast}said breakfast, went back to my bedroom and once again laid on my"
+        $ _history_list.pop()
+        "realized I forgot to eat breakfast, went to the kitchen to get and eat said breakfast, went back to my bedroom and once again laid on m y {fast}bed, accidentally fell asleep, woke up, and then realized I was now"
+        $ _history_list.pop()
+        "said breakfast, went back to my bedroom and once again laid on my bed, accidentally fell asleep, woke up, and then realized I was now {fast}an hour late for school."
+        $ _history_list.pop()
+        $ narrator.add_history(None, "", "I'm not going to describe it to you in detail so just assume I went into the bathroom to brush my teeth for approximately 2 minutes, went back into my bedroom to put on my school uniform, went back into the bathroom to admire my face in the mirror, went back into my bedroom to sit on the bed in order to figure out what to do for the next 30 minutes until I would leave to walk to school, laid on my bed to watch a few Youtube videos, got back up because I realized I forgot to eat breakfast, went to the kitchen to get and eat said breakfast, went back to my bedroom and once again laid on my bed, accidentally fell asleep, woke up, and then realized I was now an hour late for school.")
+        # Didn't have to do this but whatever lmfao
+
+        python:
+            i = -1
+            for h in _history_list:
+                i += 1
+                print(i)
+                print(h.what)
+
+        "me after the faiousdhfop9iuaehfopuiahleuhfws"
+
+        $ can_cont = True
+        scene bg residential_day with wipeleft
     return
